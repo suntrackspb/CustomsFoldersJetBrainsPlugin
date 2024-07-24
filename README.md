@@ -1,5 +1,8 @@
 # Plugin for JetBrains (WebStorm) English
 
+![Alt LiveDemo](images/CustomsFoldersJetBrainsPlugin.gif)
+
+
 The plugin creates pre-made folder and file structures for convenience and speeding up development, reducing the amount of routine actions.
 
 ### When using "Create TSx Package" and entering "RegisterPage", you will get the following structure:
