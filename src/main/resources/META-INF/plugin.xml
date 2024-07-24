@@ -1,0 +1,118 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>ru.sntrk.tspack.TSPackage</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>TSPackage</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="admin@sntrk.ru" url="https:/sntrk.ru">SunTrack</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description>
+        <![CDATA["Simple create package for TSX. <br>Create directory and children files DirectoryName.tsx and index.ts"]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+
+    <actions>
+
+        <group id="SunGroupTS"
+               text="Custom Package" description="SDK statically grouped action example"
+               popup="true" icon="com.intellij.icons.ExpUiIcons.FileTypes.React">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </group>
+
+        <group id="SunGroupJS"
+               text="Custom Package" description="SDK statically grouped action example"
+               popup="true" icon="AllIcons.FileTypes.JavaScript">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </group>
+
+        <action id="ru.sntrk.typescript.demo.CustomDialogTs"
+                class="ru.sntrk.tspack.tspackage.showCustomDialog"
+                text="Create Custom Folder And Index.Ts"
+                icon="com.intellij.icons.ExpUiIcons.FileTypes.React"
+                description="Ts">
+            <add-to-group group-id="SunGroupTS" anchor="first"/>
+        </action>
+
+        <action id="ru.sntrk.typescript.demo.CustomDialogJs"
+                class="ru.sntrk.tspack.tspackage.showCustomDialog"
+                text="Create Custom Folder And Index.Js"
+                icon="com.intellij.icons.ExpUiIcons.FileTypes.React"
+                description="Js">
+            <add-to-group group-id="SunGroupJS" anchor="first"/>
+        </action>
+
+        <action id="ru.sntrk.typescript.demo.TSCreatePack"
+                class="ru.sntrk.tspack.tspackage.CreatePackage"
+                text="TSx Package"
+                icon="com.intellij.icons.ExpUiIcons.FileTypes.React"
+                description="Ts">
+            <add-to-group group-id="SunGroupTS" anchor="first"/>
+        </action>
+        <action id="ru.sntrk.typescript.demo.JSCreatePack"
+                class="ru.sntrk.tspack.tspackage.CreatePackage"
+                text="JSx Package"
+                icon="AllIcons.FileTypes.JavaScript"
+                description="Js">
+            <add-to-group group-id="SunGroupJS" anchor="first"/>
+        </action>
+
+<!--        <action id="ru.sntrk.typescript.demo.TSCreateCustom"-->
+<!--                class="ru.sntrk.tspack.tspackage.CreateCustomFolderIndex"-->
+<!--                text="Custom Folder and Index.Ts"-->
+<!--                icon="com.intellij.icons.ExpUiIcons.FileTypes.React"-->
+<!--                description="Ts">-->
+<!--            <add-to-group group-id="SunGroupTS" anchor="first"/>-->
+<!--        </action>-->
+<!--        <action id="ru.sntrk.typescript.demo.JSCreateCustom"-->
+<!--                class="ru.sntrk.tspack.tspackage.CreateCustomFolderIndex"-->
+<!--                text="Custom Folder and Index.Js"-->
+<!--                icon="AllIcons.FileTypes.JavaScript"-->
+<!--                description="Js">-->
+<!--            <add-to-group group-id="SunGroupJS" anchor="first"/>-->
+<!--        </action>-->
+
+<!--        <action id="ru.sntrk.typescript.demo.TSCreateComponents"-->
+<!--                class="ru.sntrk.tspack.tspackage.CreateIndexFolder"-->
+<!--                text="Create Components Folder"-->
+<!--                icon="com.intellij.icons.ExpUiIcons.FileTypes.React"-->
+<!--                description="Components*Ts">-->
+<!--            <add-to-group group-id="SunGroupTS" anchor="first"/>-->
+<!--        </action>-->
+<!--        <action id="ru.sntrk.typescript.demo.JSCreateComponents"-->
+<!--                class="ru.sntrk.tspack.tspackage.CreateIndexFolder"-->
+<!--                text="Create Components Folder"-->
+<!--                icon="AllIcons.FileTypes.JavaScript"-->
+<!--                description="Components*Js">-->
+<!--            <add-to-group group-id="SunGroupJS" anchor="first"/>-->
+<!--        </action>-->
+<!--        <action id="ru.sntrk.typescript.demo.TSCreateUtils"-->
+<!--                class="ru.sntrk.tspack.tspackage.CreateIndexFolder"-->
+<!--                text="Create Utils Folder"-->
+<!--                icon="com.intellij.icons.ExpUiIcons.FileTypes.React"-->
+<!--                description="Utils*Ts">-->
+<!--            <add-to-group group-id="SunGroupTS" anchor="first"/>-->
+<!--        </action>-->
+<!--        <action id="ru.sntrk.typescript.demo.JSCreateUtils"-->
+<!--                class="ru.sntrk.tspack.tspackage.CreateIndexFolder"-->
+<!--                text="Create Utils Folder"-->
+<!--                icon="AllIcons.FileTypes.JavaScript"-->
+<!--                description="Utils*Js">-->
+<!--            <add-to-group group-id="SunGroupJS" anchor="first"/>-->
+<!--        </action>-->
+    </actions>
+</idea-plugin>
