@@ -51,7 +51,7 @@
         <action id="ru.sntrk.typescript.demo.CustomDialogJs"
                 class="ru.sntrk.tspack.tspackage.showCustomDialog"
                 text="Create Custom Folder And Index.Js"
-                icon="com.intellij.icons.ExpUiIcons.FileTypes.React"
+                icon="AllIcons.FileTypes.JavaScript"
                 description="Js">
             <add-to-group group-id="SunGroupJS" anchor="first"/>
         </action>
