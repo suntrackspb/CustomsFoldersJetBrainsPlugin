@@ -58,61 +58,17 @@
 
         <action id="ru.sntrk.typescript.demo.TSCreatePack"
                 class="ru.sntrk.tspack.tspackage.CreatePackage"
-                text="TSx Package"
+                text="Create TSx Package"
                 icon="com.intellij.icons.ExpUiIcons.FileTypes.React"
                 description="Ts">
             <add-to-group group-id="SunGroupTS" anchor="first"/>
         </action>
         <action id="ru.sntrk.typescript.demo.JSCreatePack"
                 class="ru.sntrk.tspack.tspackage.CreatePackage"
-                text="JSx Package"
+                text="Create JSx Package"
                 icon="AllIcons.FileTypes.JavaScript"
                 description="Js">
             <add-to-group group-id="SunGroupJS" anchor="first"/>
         </action>
-
-<!--        <action id="ru.sntrk.typescript.demo.TSCreateCustom"-->
-<!--                class="ru.sntrk.tspack.tspackage.CreateCustomFolderIndex"-->
-<!--                text="Custom Folder and Index.Ts"-->
-<!--                icon="com.intellij.icons.ExpUiIcons.FileTypes.React"-->
-<!--                description="Ts">-->
-<!--            <add-to-group group-id="SunGroupTS" anchor="first"/>-->
-<!--        </action>-->
-<!--        <action id="ru.sntrk.typescript.demo.JSCreateCustom"-->
-<!--                class="ru.sntrk.tspack.tspackage.CreateCustomFolderIndex"-->
-<!--                text="Custom Folder and Index.Js"-->
-<!--                icon="AllIcons.FileTypes.JavaScript"-->
-<!--                description="Js">-->
-<!--            <add-to-group group-id="SunGroupJS" anchor="first"/>-->
-<!--        </action>-->
-
-<!--        <action id="ru.sntrk.typescript.demo.TSCreateComponents"-->
-<!--                class="ru.sntrk.tspack.tspackage.CreateIndexFolder"-->
-<!--                text="Create Components Folder"-->
-<!--                icon="com.intellij.icons.ExpUiIcons.FileTypes.React"-->
-<!--                description="Components*Ts">-->
-<!--            <add-to-group group-id="SunGroupTS" anchor="first"/>-->
-<!--        </action>-->
-<!--        <action id="ru.sntrk.typescript.demo.JSCreateComponents"-->
-<!--                class="ru.sntrk.tspack.tspackage.CreateIndexFolder"-->
-<!--                text="Create Components Folder"-->
-<!--                icon="AllIcons.FileTypes.JavaScript"-->
-<!--                description="Components*Js">-->
-<!--            <add-to-group group-id="SunGroupJS" anchor="first"/>-->
-<!--        </action>-->
-<!--        <action id="ru.sntrk.typescript.demo.TSCreateUtils"-->
-<!--                class="ru.sntrk.tspack.tspackage.CreateIndexFolder"-->
-<!--                text="Create Utils Folder"-->
-<!--                icon="com.intellij.icons.ExpUiIcons.FileTypes.React"-->
-<!--                description="Utils*Ts">-->
-<!--            <add-to-group group-id="SunGroupTS" anchor="first"/>-->
-<!--        </action>-->
-<!--        <action id="ru.sntrk.typescript.demo.JSCreateUtils"-->
-<!--                class="ru.sntrk.tspack.tspackage.CreateIndexFolder"-->
-<!--                text="Create Utils Folder"-->
-<!--                icon="AllIcons.FileTypes.JavaScript"-->
-<!--                description="Utils*Js">-->
-<!--            <add-to-group group-id="SunGroupJS" anchor="first"/>-->
-<!--        </action>-->
     </actions>
 </idea-plugin>
