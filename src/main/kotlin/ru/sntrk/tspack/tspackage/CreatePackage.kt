@@ -29,7 +29,7 @@ class CreatePackage : AnAction() {
                         val indexFile = newDirectory.createChildData(this, "index.$ext")
 
                         // Записываем содержимое в файлы (если необходимо)
-                        tsxFile.setBinaryContent("export function $directoryName() {\n  return(\n    <></>\n  }\n}".toByteArray())
+                        tsxFile.setBinaryContent("export function $directoryName() {\n  return (\n    <>\n      <p>$directoryName</p>\n    </>\n  );\n}".toByteArray())
                         indexFile.setBinaryContent("export { $directoryName } from './$directoryName';\n".toByteArray())
 
                     } catch (ioException: IOException) {
