@@ -28,21 +28,22 @@
 
     <actions>
 
-        <group id="SunGroupTS"
-               text="Custom Package" description="SDK statically grouped action example"
-               popup="true" icon="com.intellij.icons.ExpUiIcons.FileTypes.React">
-            <add-to-group group-id="NewGroup" anchor="first"/>
-        </group>
-
         <group id="SunGroupJS"
-               text="Custom Package" description="SDK statically grouped action example"
+               text="Custom JS Package" description="SDK statically grouped action example"
                popup="true" icon="AllIcons.FileTypes.JavaScript">
             <add-to-group group-id="NewGroup" anchor="first"/>
         </group>
 
+        <group id="SunGroupTS"
+               text="Custom TS Package" description="SDK statically grouped action example"
+               popup="true" icon="com.intellij.icons.ExpUiIcons.FileTypes.React">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </group>
+
+
         <action id="ru.sntrk.typescript.demo.CustomDialogTs"
                 class="ru.sntrk.tspack.tspackage.showCustomDialog"
-                text="Create Custom Folder And Index.Ts"
+                text="Folder with Index.Ts"
                 icon="com.intellij.icons.ExpUiIcons.FileTypes.React"
                 description="Ts">
             <add-to-group group-id="SunGroupTS" anchor="first"/>
@@ -50,7 +51,7 @@
 
         <action id="ru.sntrk.typescript.demo.CustomDialogJs"
                 class="ru.sntrk.tspack.tspackage.showCustomDialog"
-                text="Create Custom Folder And Index.Js"
+                text="Folder with Index.Js"
                 icon="AllIcons.FileTypes.JavaScript"
                 description="Js">
             <add-to-group group-id="SunGroupJS" anchor="first"/>
@@ -58,14 +59,14 @@
 
         <action id="ru.sntrk.typescript.demo.TSCreatePack"
                 class="ru.sntrk.tspack.tspackage.CreatePackage"
-                text="Create TSx Package"
+                text="TSx Component"
                 icon="com.intellij.icons.ExpUiIcons.FileTypes.React"
                 description="Ts">
             <add-to-group group-id="SunGroupTS" anchor="first"/>
         </action>
         <action id="ru.sntrk.typescript.demo.JSCreatePack"
                 class="ru.sntrk.tspack.tspackage.CreatePackage"
-                text="Create JSx Package"
+                text="JSx Component"
                 icon="AllIcons.FileTypes.JavaScript"
                 description="Js">
             <add-to-group group-id="SunGroupJS" anchor="first"/>
