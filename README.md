@@ -3,7 +3,7 @@
 ![Alt LiveDemo](images/CustomsFoldersJetBrainsPlugin.gif)
 
 
-![DOWNLOAD zip](https://github.com/suntrackspb/CustomsFoldersJetBrainsPlugin/releases)
+### Releases: [DOWNLOAD zip](https://github.com/suntrackspb/CustomsFoldersJetBrainsPlugin/releases)
 
 The plugin creates pre-made folder and file structures for convenience and speeding up development, reducing the amount of routine actions.
 
